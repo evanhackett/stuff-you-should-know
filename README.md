@@ -16,6 +16,8 @@ Note: it took me 10 years to learn all this, including a bootcamp, a CS degree, 
 
 *Note*: other instructors at Code Guild may not agree with this list, and that is ok! They are free to submit a pull request :)
 
+**Update**: Other people who have added contributions to this list: [Zack Kollar](https://github.com/SeedyROM)
+
 ### The List
 
 * Unix
