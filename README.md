@@ -175,7 +175,7 @@ Study these people. Read what they wrote, watch their talks, etc.
     * LaTeX
     * PAXOS Consensus Algorithm
     * Many more
-  * Invented a mathimatically proovable solver for computer programs called TLA+
+  * Invented a mathimatically provable solver for computer programs called TLA+
     * See his series on this on youtube
 * Linus Torvalds
   * Founded and started the Linux OS
