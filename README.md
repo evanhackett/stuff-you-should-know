@@ -1,8 +1,12 @@
 # Stuff You Should Know (as a computing professional)
 
+This list was created for students and alumni of PDX Code Guild, however, anyone interested in being a computing professional could benefit from this list.
+
+The list is largely biased towards the "software engineering" side of computing.
+
 ## Evan's List
 
-This is Evan's opinionated list of "stuff everyone should know".
+This is Evan's opinionated list of "stuff everyone should know". Further down in the document, an alumni contributed list is given as well.
 
 The list contains both important computer science concepts, as well as software development tools and techniques.
 
@@ -10,7 +14,7 @@ Much of this list was/will not be covered in the Code Guild curriculum. Think of
 
 Note: it took me 10 years to learn all this, including a bootcamp, a CS degree, on the job learning, and a ton of self-study along the way! Don't be overwhelmed. This is a journey, and you are going to be here a while. Settle in and enjoy the ride!
 
-Note: other instructors at Code Guild may not agree with this list, and that is ok! They are free to submit a pull request :)
+*Note*: other instructors at Code Guild may not agree with this list, and that is ok! They are free to submit a pull request :)
 
 ### The List
 
