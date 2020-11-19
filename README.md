@@ -35,20 +35,28 @@ Note: it took me 10 years to learn all this, including a bootcamp, a CS degree, 
   * Big O Notation
   * Stacks, Queues, Trees, Linked Lists, Graphs, Hash Tables
     * Bare minimum you *must* know these!
+  * Specialized Trees
+    * Heaps
+    * Red Black
+    * Trie
+    * Merkle
+    * Markov Chains
 * Security basics
-  * check out the OWASP top ten list for example
-* Public Key Cryptography
-  * how it works, why it's important
+  * Check out the OWASP top ten list for example
+  * Reverse engineering
+  * Reading a objdump
+  * Understanding compilers and assembly
 * Databases
   * SQL vs NoSQL
   * CAP Theorem
-* Auth 
+* Auth
   * authentication vs authorization
 * Testing
   * unit, integration, end-to-end, etc.
 * Architecture basics
   * separation of concerns
   * "layered" architectures
+  * microservices vs mono repos
 * Design Patterns
   * Publish/Subscribe (aka "pubsub")
   * MVC (model view ccontroller)
@@ -96,6 +104,14 @@ Note: it took me 10 years to learn all this, including a bootcamp, a CS degree, 
 * Hashing
   * hash tables, cryptographic hashes, content-based addressing, hashing passwords
   * hashing vs encrypting (not the same thing! Do not encrypt passwords, hash them instead!)
+* Encryption
+  * RSA
+  * PGP
+  * Public key cryptography
+  * How to use hashes to make your cryptography even more secure
+    * SHA1
+    * SHA256
+    * SHA3 (Keccak256)
 * Caching
   * many problems are solved with a cache
 * History
@@ -106,10 +122,36 @@ Note: it took me 10 years to learn all this, including a bootcamp, a CS degree, 
     * binary logic -> boolean algebra -> Jacquard's loom -> punch card systems, etc.
     * Charles Babbage and Ada Lovelace
     * Church-Turing thesis
+    * George Bool
+    * Haskell Curry
     * Shannon and information theory
     * von Neumann
+    * Bell Labs
     * Xerox PARC
   * One of the best books ever: The Dream Machine by M. Mitchell Waldrop 
+* Functional Programming
+  * Concepts and usage, most modern languages allow you to do this pretty easily along with OOP
+  * Languages that utilize this to a tee:
+    * Haskell
+    * Elm
+    * Pony
+    * Erlang
+    * Elixir
+* Distributed Systems
+  * The nine nines
+  * Fault tolerance and resiliency
+  * Consensus
+  * Peer to peer communication
+* Serialization
+  * TCP packets
+  * Binary encodings in general (such as JPEG, this ties into the next 2 sections)
+* Error Correction
+  * Hamming codes
+  * Reed Solomon codes
+* Compression
+  * Lampel-Ziv
+  * DCT Transforms
+  * Deflate
 
 ### People
 
@@ -128,6 +170,19 @@ Study these people. Read what they wrote, watch their talks, etc.
   * watch any of his talks on youtube, read his Quora answers
 * Rich Hickey
   * watch any of his talks on youtube (although some are specific to the language Clojure, not all of them are)
+* Leslie Lamport
+  * has invented many of the tools academics and distributed systems use
+    * LaTeX
+    * PAXOS Consensus Algorithm
+    * Many more
+  * Invented a mathimatically proovable solver for computer programs called TLA+
+    * See his series on this on youtube
+* Linus Torvalds
+  * Founded and started the Linux OS
+  * Not a lot of talks, but his code is a great read
+* Dennis Ritchie
+  * Wrote B, C and Unix (Along with Ken Thompson)
+  * Basically one of the godfathers of all modern programming, the C style is used in almost every modern procedural language
 * Douglas Crockford
   * has great talks about javascript on youtube
 * David Beazley
@@ -160,7 +215,12 @@ Note: some of these aren't actually "papers", but may be articles, blog posts, o
 * Chapters from Google's [Site Reliability Engineering](https://landing.google.com/sre/sre-book/toc/index.html)
   * chapters are largely self-contained essays, fairly easy to read, provides a peek behind the curtain regarding how Google operates internally
 * Licklider - Man-Computer Symbiosis
-* Bitcoin: A Peer-to-Peer Electronic Cash System
+* **Distributed Systems**
+  * Crypto Currencies:
+    * Bitcoin: A Peer-to-Peer Electronic Cash System [Whitepaper](https://bitcoin.org/bitcoin.pdf)
+    * Ethereum: Inspired by bitcoin, but uses a distributed ledger/state machine to allow for programs to be run across all nodes that agree with the block consensus. [Whitepaper](https://ethereum.org/en/whitepaper/)
+    * Hashcash: The precursor to bitcoin [Whitepaper](http://www.hashcash.org/papers/)
+  
 * Ken Thompson - Reflections on Trusting Trust
 
 ## Alumni Contributions
