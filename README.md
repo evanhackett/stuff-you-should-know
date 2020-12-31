@@ -23,46 +23,55 @@ Note: it took me 10 years to learn all this, including a bootcamp, a CS degree, 
 * Unix
   * "Unix is an IDE"
   * Mac and Linux both have a Unix interface under the hood
-  * even Microsoft is moving in this direction
+    * even Microsoft is moving in this direction
   * server environments are almost always unix-based
+  * try to understand the oft-cited "Unix Philosophy"
+    * see McIlroy's thoughts on pipes, ESR's writings, and Lampson's "Hints for Computer System Design"
 * the command line: bash, grep, awk, sed, find, bash scripts, etc.
   * start with the built-in Unix commands, then move on to 3rd party "useful command line programs"
   * learn how to pipe commands together to compose new programs!
 * Regular Expressions
+  * "no one ever saved time by _not_ learning regular expressions"
 * Git
   * rebasing, merging, etc.
-* CSS basics. Box model
+  * keep in mind that git is a leaky abstraction, and so it helps a lot to learn the underlying data structures
+* CSS basics: Box Model, etc.
+  * a lot of programmers ignore learning CSS, but many of us end up working as "full stack" developers, and so when we have to do CSS it takes us longer than it should. Just spend some time to actually learn it, instead of googling every little thing you have to do =)
 * Algorithms + Data Structures
   * Binary Search
   * Big O Notation
   * Stacks, Queues, Trees, Linked Lists, Graphs, Hash Tables
     * Bare minimum you *must* know these!
-  * Specialized Trees
+  * More advanced
     * Heaps
-    * Red Black
+    * Red Black tree
     * Trie
-    * Merkle
+    * Merkle tree
     * Markov Chains
+    * Bloom Filter
 * Security basics
   * Check out the OWASP top ten list for example
-  * Reverse engineering
-  * Reading a objdump
-  * Understanding compilers and assembly
+  * authentication vs authorization
+
 * Databases
   * SQL vs NoSQL
   * CAP Theorem
-* Auth
-  * authentication vs authorization
+
 * Testing
   * unit, integration, end-to-end, etc.
+  * learn TDD so you can at least participate in the conversation, you might not agree with it
+
 * Architecture basics
   * separation of concerns
   * "layered" architectures
   * microservices vs mono repos
+
 * Design Patterns
   * Publish/Subscribe (aka "pubsub")
   * MVC (model view ccontroller)
   * lots more!
+  * also keep in mind the patterns community has sort of split off into other things (like Scrum patterns for example) and so there are many "patterns" worth checking out beyond just "OOP patterns" 
+
 * Low Level
   * binary
   * how floating point numbers are represented in bits vs integers
@@ -70,52 +79,62 @@ Note: it took me 10 years to learn all this, including a bootcamp, a CS degree, 
   * how CPU works (at a basic level)
   * logic gates
     * everything in a computer can be constructed from simple logic gates!
+    * check out "Elements of Computing Systems" (aka "nand2tetris") if you want to walk through building a computer from scratch
+      * there's a fun graphical version that covers part of the text here: [NandGame](http://nandgame.com/)
   * assembly language basics
     * gain a basic understanding of how assembly language works to illuminate how computers work in general
     * will also make you appreciate high level languages that much more!
-* Higher-order Functions
-  * lambdas
-  * closures
-  * map/filter/reduce
-  * callbacks
+
 * Concurrency basics
   * concurrency vs parallelism
   * synchronous vs asynchronous
   * Processes vs Threads
+
 * Theory of Computation basics
   * Turing Completeness
     * what implication does this have for programming languages?
   * The Halting Problem
     * what implications does this have for computers? 
+
 * The Internet
   * how internet works and networking in general
   * the web vs. the internet (not the same thing!)
+    * many hypertext systems could have been built on top of the internet, the "World Wide Web" is just what we happened to end up with
+      * see Nelson's Xanadu system for an example of an alternative vision
+
 * Managing Complexity
   * Coupling
     * coupling is a source of complexity, reduce coupling!
   * Abstraction
   * Modularity
+  * also worth pointing out that empirical software engineering research has identified "lines of code" as a primary source of complexity, meaning reducing lines of code is at least correlated with reducing complexity
+    * check out VPRI's STEPS project to see this idea taken seriously
+
 * Programming Language Theory basics
   * Syntax vs semantics
   * Static vs Dynamic semantics
   * Static vs Dynamic types
   * Syntactic Sugar
+    * "Syntactic sugar causes cancer of the semi-colon"
+    * what do you think is meant by this?
   * Compiled vs Interpreted
   * Imperative vs Declarative
   * Paradigms (Procedural, FP, OOP, Logic, etc.)
+
 * Hashing
   * hash tables, cryptographic hashes, content-based addressing, hashing passwords
   * hashing vs encrypting (not the same thing! Do not encrypt passwords, hash them instead!)
+
 * Encryption
   * RSA
   * PGP
   * Public key cryptography
   * How to use hashes to make your cryptography even more secure
-    * SHA1
-    * SHA256
-    * SHA3 (Keccak256)
+    * SHA1, SHA256, SHA3 (Keccak256)
+
 * Caching
-  * many problems are solved with a cache
+  * many problems are solved with a cache. You should understand why and how
+
 * History
   * [History of Software Engineering](https://learning.acm.org/techtalks/histofsofteng)
   * history of the web, hypertext, javascript, etc.
@@ -131,25 +150,29 @@ Note: it took me 10 years to learn all this, including a bootcamp, a CS degree, 
     * Bell Labs
     * Xerox PARC
   * One of the best books ever: The Dream Machine by M. Mitchell Waldrop 
+
 * Functional Programming
-  * Concepts and usage, most modern languages allow you to do this pretty easily along with OOP
-  * Languages that utilize this to a tee:
-    * Haskell
-    * Elm
-    * Pony
-    * Erlang
-    * Elixir
+* Object Oriented Programming
+  * read [The Early History Of Smalltalk](http://worrydream.com/EarlyHistoryOfSmalltalk/), written by the man who coined the term "Object Oriented Programming", Alan Kay
+    * this document really helps to understand what OOP is really about, in spirit
+
 * Distributed Systems
   * The nine nines
   * Fault tolerance and resiliency
   * Consensus
   * Peer to peer communication
+  * also worth looking into the various programming models throughout history, some of which are still really good ideas that could be expanded on today. Some examples:
+    * Linda Tuple Spaces
+    * Actor Model
+
 * Serialization
   * TCP packets
   * Binary encodings in general (such as JPEG, this ties into the next 2 sections)
+
 * Error Correction
   * Hamming codes
   * Reed Solomon codes
+
 * Compression
   * Lampel-Ziv
   * DCT Transforms
@@ -171,27 +194,28 @@ Study these people. Read what they wrote, watch their talks, etc.
 * Alan Kay
   * watch any of his talks on youtube, read his Quora answers
 * Rich Hickey
-  * watch any of his talks on youtube (although some are specific to the language Clojure, not all of them are)
+  * watch any of his talks on youtube (although many of his talk appear to be specific to Clojure, I generally get a lot out of them despite never having used Clojure before)
 * Leslie Lamport
   * has invented many of the tools academics and distributed systems use
     * LaTeX
     * PAXOS Consensus Algorithm
     * Many more
-  * Invented a mathimatically provable solver for computer programs called TLA+
+  * Invented a formal specification language for computer programs called TLA+
     * See his series on this on youtube
 * Linus Torvalds
-  * Founded and started the Linux OS
+  * Founded and started Linux, also created Git
   * Not a lot of talks, but his code is a great read
-* Dennis Ritchie
-  * Wrote B, C and Unix (Along with Ken Thompson)
-  * Basically one of the godfathers of all modern programming, the C style is used in almost every modern procedural language
+* Dennis Ritchie, Ken Thompson, Rob Pike, Doug McIlroy
+  * all of these people were involved with creating Unix and the surrounding tools (including the C language, grep, pipes, etc.)
+  * many of their old papers are still worth reading today
 * Douglas Crockford
   * has great talks about javascript on youtube
 * David Beazley
   * "Jimi Hendrix of Python"
-  * has awesome live-coding talks on youtube, specializing on Python
+  * has awesome live-coding talks on youtube, I particularly enjoyed the ones on concurrency
 * Edsger W. Dijkstra
-  * has some sharp criticisms of our industry that are worth reading
+  * has some sharp criticisms of our industry that are worth reading (you can find many of these in his "manuscripts")
+  * also made seminal contributions to the field, worth knowing about
 
 ### Papers
 
@@ -217,23 +241,76 @@ Note: some of these aren't actually "papers", but may be articles, blog posts, o
 * Chapters from Google's [Site Reliability Engineering](https://landing.google.com/sre/sre-book/toc/index.html)
   * chapters are largely self-contained essays, fairly easy to read, provides a peek behind the curtain regarding how Google operates internally
 * Licklider - Man-Computer Symbiosis
-* **Distributed Systems**
-  * Crypto Currencies:
-    * Bitcoin: A Peer-to-Peer Electronic Cash System [Whitepaper](https://bitcoin.org/bitcoin.pdf)
-    * Ethereum: Inspired by bitcoin, but uses a distributed ledger/state machine to allow for programs to be run across all nodes that agree with the block consensus. [Whitepaper](https://ethereum.org/en/whitepaper/)
-    * Hashcash: The precursor to bitcoin [Whitepaper](http://www.hashcash.org/papers/)
-  
+* Bitcoin: A Peer-to-Peer Electronic Cash System [Whitepaper](https://bitcoin.org/bitcoin.pdf)
 * Ken Thompson - Reflections on Trusting Trust
+* Meta II - A Syntax-Oriented Compiler Writing Language
+  * this paper will blow your mind; it presents a compiler that generates compilers which is also capable of compiling itself 
+  * definitely see the [tutorial by James Neighbors](http://www.bayfronttechnologies.com/mc_tutorial.html) which helped me understand the paper
+
+
+### Programming Languages
+
+Many students ask me about languages, probably more than anything else. "What programming language should I learn next?" I think this is a consequence of the fact that, for many people, when they are learning to program, the main thing they recognize as a learning objective is features of the language. Loops, if-statements, functions, classes, lists, tuples, dictionaries, etc. This has the consequence of them thinking that the natural next step after learning a language is to learn another language. This is a fine thing to do, but I think it's important to point out all of the other options besides just learning one language after another. You'll notice the vast majority of items on this list did not involve learning another programming language.
+
+That being said, learning languages can be an extremely valuable thing, especially if done properly. The key is to learn a language that changes the way you think about programming. Most languages in the mainstream are not actually that different from each other, so care and judgement has to be taken when deciding how to spend your time.
+
+Given that this list is largely for bootcamp grads, I will assume the reader has learned Python and/or Javascript. 
+
+With all that said, here are my recommendations. Note I have just picked "families" of languages, as the specific one doesn't matter. Choose whichever implementation makes sense to you, the "big idea" of the language is what matters most.
+
+* Lisp
+  * choose one of: Common Lisp, Clojure, Racket, Scheme, etc.
+  * to see the big idea of "code is data"
+* ML
+  * choose one of: SML, Ocaml, Haskell, Elm, etc.
+  * to see how powerful a strong type system can be, and to gain experience with functional programming
+* Smalltalk
+  * choose one of: Squeak, Pharo, emulate an older one, etc.
+  * to see the big idea of message passing, and how powerful a highly dynamic programming environment can be
+* Prolog
+  * choose one of SWI-Prolog, SICStus Prolog, GNU Prolog, etc.
+    * there are also prolog-like systems developed for other languages (often found in lisps for example)
+  * to see how a "declarative logic" language can use relations and constraints to search for solutions
+* C
+  * the only specific language on this list, also the lowest level and the most mainstream
+  * so much of what we use is built up from C. It is simply too ubiquitous to ignore, and it is also pretty easy to learn the basics
+  * the "low level" thinking required to be successful with C will help you understand how computers work
+    * combined with learning assembly language, C allows you to almost "see through to the assembly", due to how straightforwardly it can be compiled (although modern compilers will optimize the generated assembly in ways you could never do by hand, in principle this "transparent" aspect of C is the "big idea")
+
+If you learn Lisp, ML, Smalltalk, Prolog, and C, you will be a much better programmer for it! Even if your day job is javascript and your side projects are in Rust, you will be glad you spent the time on these "big idea" languages, as your skills and newfound knowledge can be applied in any language. If learning a language _doesn't_ help you program in other languages, it probably wasn't worth learning.
+
+So if you are a bootcamp grad, please don't just learn Python -> Javascript -> Ruby -> (next hot thing)
+
+And if you are a university grad, please don't just learn C -> C++ -> Java -> Go -> (next hot thing)
+
+### Stuff I didn't mention
+
+There is probably a ton of stuff I left out. I will update the list as I think of more things. However, I want to call specific attention to the fact that I did not mention javascript frameworks like React, or some other hot new thing. Hot New Things are hard to evaluate in the present, but I think most of them turn out to be not that important in the grand scheme of things. I want this list to be as timeless as possible, so I'm specifically leaving out things that aren't likely to matter in 20 years.
+
+### "But I just want to know how to get a job!"
+
+Well then you need to find another list! But the short version of that would be something like this (at the time of this writing):
+
+* learn hot new javascript framework
+* learn hot new state-management system for javascript framework
+* learn basic "solutions architecting" and how to use the cloud providers' platform (AWS, Google Cloud, Azure) to deploy applications
+* learn basic data structures and algorithms and practice interview questions
+  * I recommend working through the book "Cracking the Coding Interview"
+* learn how to self-promote and network
+
+Honestly that's pretty much it. It's not easy, but it is simple.
 
 ## Alumni Contributions
 
 The following list was provided by asking Code Guild alumni for a list of things they wish they would have learned more about during bootcamp.
 
-I will add to this as more alumni contribute!
+I will add to this as more alumni contribute.
 
-* Classes (OOP)
-  * [classes vs data structures + functions](https://blog.cleancoder.com/uncle-bob/2019/06/16/ObjectsAndDataStructures.html)
+* Classes, specifically when to use classes over plain functions 
+  * I think the following is a good overview: [classes vs data structures + functions](https://blog.cleancoder.com/uncle-bob/2019/06/16/ObjectsAndDataStructures.html)
+  * although if you want to learn "real OOP", you should probably focus less on "classes" as a language feature in Python (or whatever) and just dive into something like Smalltalk which helps force the proper paradigm on you
 * Environment Variables
 * How to *efficiently* package Python code as a single executable file
 * Algorithms + Data Structures
-  * I know it's on my list above, but students are asking for more as well!
+  * I know it's on my list above, but I just wanted to point out that graduates are saying "I wish I would have spent more time on this"
+    * this is largely due to the interview process in our industry, and the emphasis placed on data structures and algorithms. So as grads start looking for jobs, they realize they need to know this stuff!
