@@ -158,7 +158,9 @@ Note: it took me 10 years to learn all this, including a bootcamp, a CS degree, 
 
 * Distributed Systems
   * The nine nines
-  * Fault tolerance and resiliency
+  * Fault Tolerance
+  * Availability
+  * Consistency
   * Consensus
   * Peer to peer communication
   * also worth looking into the various programming models throughout history, some of which are still really good ideas that could be expanded on today. Some examples:
@@ -219,7 +221,9 @@ Study these people. Read what they wrote, watch their talks, etc.
 
 ### Papers
 
-Read these papers. Being able to read papers is a super helpful skill when you get into more research-oriented roles. The following papers are on the more accessible side, so should make good practice.
+Read these papers. Being able to read papers is a super helpful skill when you get into more research-oriented roles. 
+
+The following papers are on the more accessible side, so should make good practice.
 
 Note: some of these aren't actually "papers", but may be articles, blog posts, or sections from a book
 
@@ -233,6 +237,7 @@ Note: some of these aren't actually "papers", but may be articles, blog posts, o
   * Epic and hilarious!
 * [The Most Important Software Innovations](https://dwheeler.com/innovation/innovation.html)
 * Fred Brooks - No Silver Bullet - Essence and Accident in Software Engineering
+  * it's just referenced so often, even still today, that I think everyone should read it
 * Liu, Lu, Musuvathi, Nath - What bugs cause production cloud incidents?
 * Leveson, Turner - Investigation of Therac-25 Accidents
 * Niklaus Wirth - A Plea For Lean Software
@@ -246,7 +251,10 @@ Note: some of these aren't actually "papers", but may be articles, blog posts, o
 * Meta II - A Syntax-Oriented Compiler Writing Language
   * this paper will blow your mind; it presents a compiler that generates compilers which is also capable of compiling itself 
   * definitely see the [tutorial by James Neighbors](http://www.bayfronttechnologies.com/mc_tutorial.html) which helped me understand the paper
-
+* The Design Philosophy of the DARPA Internet Protocols
+  * this is more of a "why" paper than a deep technical dive on how the protocols work
+* MapReduce: Simplified Data Processing on Large Clusters (2004)
+  * good intro into distributed systems
 
 ### Programming Languages
 
